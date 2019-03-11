@@ -9,7 +9,7 @@ help:
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
 
 install:
-	npm install
+	npm ci
 
 clean:
 	@echo "Removing dependencies"
@@ -19,3 +19,6 @@ clean:
 
 build:
 	@npm run build
+
+publish: clean install build
+	@npm run semantic-release
