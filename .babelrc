@@ -1,0 +1,13 @@
+{
+  "presets": ["@babel/preset-env", "@babel/preset-react"],
+  "ignore": [
+    "lib/*"
+  ],
+  "plugins": [
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-proposal-export-namespace-from",
+    "@babel/plugin-proposal-export-default-from"
+  ],
+  "sourceMaps": true,
+  "sourceType": "module"
+}

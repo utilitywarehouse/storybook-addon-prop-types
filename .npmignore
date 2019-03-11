@@ -1,0 +1,17 @@
+.storybook
+.stories
+package-lock.json
+src
+test
+jest
+yarn.lock
+*.log
+*js.map
+*.test.js
+Makefile
+.editorconfig
+.eslintignore
+.eslintrc
+.lintstagedrc
+.prettierrc
+screenshots
