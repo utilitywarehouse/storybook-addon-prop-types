@@ -10,19 +10,19 @@ Based on [React DocGen babel plugin](https://github.com/storybooks/babel-plugin-
 First, intstall the addon and babel plugin.
 
 ```
-npm i -D [package_name_to_be_provided] babel-plugin-react-docgen
+npm i -D @utilitywarehouse/storybook-addon-prop-types babel-plugin-react-docgen
 ```
 
 Add this line to your addons.js file (create this file inside your storybook config directory if needed).
 
 ```javascript
-import '[package_name_to_be_provided]/register'
+import '@utilitywarehouse/storybook-addon-prop-types/register'
 ```
 
 Import the `withPropsOf` decorator to your stories to add propTypes content for the panel.
 
 ```javascript
-import { withPropsOf } from '[package_name_to_be_provided]'
+import { withPropsOf } from '@utilitywarehouse/storybook-addon-prop-types'
 import Radio from './Radio'
 ...
 
